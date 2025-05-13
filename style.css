@@ -1,0 +1,165 @@
+/* Reset some styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+header nav ul li a:hover {
+    background-color: #444;
+    border-radius: 4px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.hero {
+    background: #00aaff;
+    color: white;
+    padding: 80px 20px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.hero .btn:hover {
+    background-color: #555;
+}
+
+.about-content, .contact-content {
+    margin-top: 40px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-content h1, .contact-content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-content h2 {
+    font-size: 1.6rem;
+    margin-top: 20px;
+}
+
+ul {
+    text-align: left;
+    margin-top: 10px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.contact-content form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin-bottom: 15px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .about-content, .contact-content {
+        padding: 20px;
+    }
+}
