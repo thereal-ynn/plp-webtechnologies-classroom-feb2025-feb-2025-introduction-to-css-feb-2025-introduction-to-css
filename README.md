@@ -1,29 +1,71 @@
-# Introduction to CSS
+body {
+  font-family: 'Georgia', serif;
+  margin: 0;
+padding: 0;
+  background-color: #f2f2f2;
+  color: #333;
+}
 
-## Objectives
-Link an external CSS file to an HTML document.
-Apply basic styling using selectors.
-Use colors, fonts, and spacing effectively.
+/* ID Selector */
+#main-header {
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 5px solid #005999;
+}
 
-## Instructions
+/* Class Selector */
+.subtitle {
+  font-style: italic;
+  font-size: 1.2em;
+  color: #b3d9ff;
+}
 
-Create a style.css file.
-Apply CSS to a HTML page.
-Style elements using:
-Classes and IDs.
-Color and typography.
-Margins, paddings, and borders.
+.nav-link {
+  text-decoration: none;
+  padding: 10px 15px;
+  color: white;
+}
 
->[!NOTE]
->  - Include at least:
->  - Use of 3 selectors
->  - Style an image
->  - Margin, Padding & Borders
->  - Different font
+nav ul {
+  list-style: none;
+  background-color: #005999;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
 
-# Tasks
- - Link an external CSS file.
- - Apply at least 3 different selectors.
- - Improve readability and aesthetics.
+nav ul li {
+  display: inline;
+}
 
-Happy Coding! 💻✨
+nav ul li a:hover {
+  background-color: #0073e6;
+}
+
+#main-content {
+  background-color: white;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+.styled-img {
+  width: 100%;
+  max-width: 300px;
+  border: 5px solid #003366;
+  padding: 5px;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
